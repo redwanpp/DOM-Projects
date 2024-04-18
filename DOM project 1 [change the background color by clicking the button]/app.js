@@ -15,10 +15,14 @@ window.onload =  () => {
 
 function main() {
     const root = document.getElementById('root');
+    const txt = document.getElementById('txt');
     const btn = document.getElementById('change-btn');
 
     btn.addEventListener('click', function() {
         const bgColor = generateRGBColor();
+        const color = generateRGBColor();
+
+        txt.style.color = color;
         root.style.backgroundColor = bgColor;
     })
 }
